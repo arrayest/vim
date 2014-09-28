@@ -1,6 +1,7 @@
 " my sets begin
 syntax on
 set number
+set vb t_vb= "关闭响铃和闪屏
 if has('gui_running')
 	set background=light
 else
