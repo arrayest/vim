@@ -1,7 +1,12 @@
-syntax on 
+" my sets begin
+syntax on
 set number
-"colorscheme monokai
-set background=dark
+if has('gui_running')
+	set background=light
+else
+	set background=dark
+endif
+" my sets end
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -15,63 +20,82 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'ack.vim'
-Bundle 'comments.vim'
-Bundle 'ctrlp.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'rspec.vim'
-Bundle 'honza/vim-snippets'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-bundler'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-rails'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'pangloss/vim-javascript'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'briancollins/vim-jst'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'slim-template/vim-slim'
-Bundle 'sudo.vim'
-Bundle 'ZenCoding.vim'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'othree/xml.vim'
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+" Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+" Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+" Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Avoid a name conflict with L9
+" Plugin 'user/L9', {'name': 'newL9'}
 
+" All of your Plugins must be added before the following line
+" my plugins begin
+Plugin 'flazz/vim-colorschemes'
+" Plugin 'tomasr/molokai'
+Plugin 'mileszs/ack.vim'
+Plugin 'ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'majutsushi/tagbar'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'chrisbra/NrrwRgn'
+Plugin 'tpope/vim-fugitive'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'mattn/emmet-vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'skalnik/vim-vroom'
+Plugin 'plasticboy/vim-markdown'
+" my plugins end
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
-filetype plugin indent on     " required
-
-"auto completed
-"RUBY
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global = 1
-let g:rubycomplete_rails = 1
-
-"RUBY plugin
-"autocmd FileType ruby compiler ruby
-
-"autocmd vimenter * if !argc() | NERDTree | endif
-"autocmd VimEnter * NER
-
-" 设定文件浏览器目录为当前目录  
-set bsdir=buffer  
+" my sets begin
 " 设置编码  
 set enc=utf-8  
-" 设置文件编码  
-set fenc=utf-8  
-" 设置文件编码检测类型及支持格式  
-set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936  
 
-"忽略大小写查找
-set ic
-"
-" tab宽度  
+" 设置文件编码  
+set fenc=utf-8 
+
+" 设置文件编码检测类型及支持格式  
+set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+
+" 设置tab宽度  
 set tabstop=2  
 set cindent shiftwidth=2  
 set autoindent shiftwidth=2
+
+" 设置colorscheme
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+
+" set mouse
+set mouse=a
+" set incsearch
+set incsearch
+" my sets end
