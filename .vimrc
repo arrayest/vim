@@ -1,7 +1,6 @@
 " my sets begin
 syntax on
 set number
-set vb t_vb= "关闭响铃和闪屏
 if has('gui_running')
 	set background=light
 else
@@ -59,7 +58,10 @@ Plugin 'mattn/emmet-vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'skalnik/vim-vroom'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'digitaltoad/vim-jade'
 " my plugins end
 call vundle#end()            " required
 filetype plugin indent on    " required
