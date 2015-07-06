@@ -62,6 +62,11 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'pangloss/vim-javascript'
+Plugin 'isRuslan/vim-es6'
+Plugin 'pbrisbin/vim-mkdir'
+Plugin 'othree/html5.vim'
 " my plugins end
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -78,19 +83,20 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " my sets begin
-" 设置编码  
-set enc=utf-8  
+" 设置编码
+set enc=utf-8
 
-" 设置文件编码  
-set fenc=utf-8 
+" 设置文件编码
+set fenc=utf-8
 
-" 设置文件编码检测类型及支持格式  
+" 设置文件编码检测类型及支持格式
 set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 
-" 设置tab宽度  
-set tabstop=2  
-set cindent shiftwidth=2  
+" 设置tab宽度
+set tabstop=2
+set cindent shiftwidth=2
 set autoindent shiftwidth=2
+set expandtab
 
 " 设置colorscheme
 colorscheme molokai
