@@ -70,6 +70,7 @@ Plugin 'othree/html5.vim'
 " my plugins end
 call vundle#end()            " required
 filetype plugin indent on    " required
+syntax enable
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -107,4 +108,9 @@ let g:rehash256 = 1
 set mouse=a
 " set incsearch
 set incsearch
+"光标行高亮
+set cursorline
+"光标列高亮
+set cursorcolumn
+
 " my sets end
