@@ -67,6 +67,16 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'isRuslan/vim-es6'
 Plugin 'pbrisbin/vim-mkdir'
 Plugin 'othree/html5.vim'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+" Trigger configuration. Do not use <tab> if you use: https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 " my plugins end
 call vundle#end()            " required
 filetype plugin indent on    " required
