@@ -71,6 +71,7 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'ekalinin/Dockerfile.vim'
 " Trigger configuration. Do not use <tab> if you use: https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
