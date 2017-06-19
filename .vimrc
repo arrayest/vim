@@ -74,6 +74,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'chusiang/vim-sdcv'
+nmap <leader>w :call SearchWord()<CR>
 " Trigger configuration. Do not use <tab> if you use: https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
